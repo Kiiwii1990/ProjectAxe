@@ -1,7 +1,17 @@
-[gd_scene format=3 uid="uid://c6tyggpqh4l73"]
+[gd_scene load_steps=3 format=3 uid="uid://c6tyggpqh4l73"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_kbncl"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5lf1y"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15574, 0, 0)
+mesh = SubResource("BoxMesh_kbncl")
 
 [node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.89255, 0, 0)
+mesh = SubResource("PlaneMesh_5lf1y")
