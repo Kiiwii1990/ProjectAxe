@@ -20,7 +20,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("mouseWheelDown"):
 		camera_zoom += 0.5
 	$SpringArm3D.position.z += camera_zoom
-	$SpringArm3D.position.z = clamp($SpringArm3D.position.z,5,25)
+	$SpringArm3D.position.z = clamp($SpringArm3D.position.z,1,25)
 	camera_zoom = lerpf(camera_zoom,0.0,0.2)
 	#Movement of the camera, to set up later!
 	#if Input.is_action_just_pressed("b_camera_drag"):
@@ -41,6 +41,6 @@ func _input(event: InputEvent) -> void:
 		if event is InputEventMouseMotion:
 			tempRot = rotation.x - event.relative.y / 1000 * sensitivity
 			rotation.y -= event.relative.x / 1000 * sensitivity
-			tempRot = clamp(tempRot, -1, 0.25)
+			tempRot = clamp(tempRot, -1, -.1)
 			rotation.x = tempRot
 	
