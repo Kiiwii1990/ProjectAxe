@@ -27,13 +27,14 @@ script = ExtResource("1_b2vp4")
 simplify_path = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.786, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_jvqwo")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D/CollisionShape3D"]
-transform = Transform3D(0.659856, 0, 0, 0, 0.706104, 0, 0, 0, 0.604117, 0, 0.0268998, 0)
 mesh = SubResource("CapsuleMesh_sf06v")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
-transform = Transform3D(0.210227, 0, 0, 0, 0.00771133, -0.150425, 0, 0.207628, 0.00558684, 0, 0.407266, -0.364868)
+transform = Transform3D(0.210227, 0, 0, 0, 0.00771133, -0.150425, 0, 0.207628, 0.00558684, 0, 0.407266, -0.602587)
 mesh = SubResource("CapsuleMesh_us2ql")
+
+[node name="LookAt" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.558215, 0)
