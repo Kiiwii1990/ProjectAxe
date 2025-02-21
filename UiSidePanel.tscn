@@ -1,0 +1,183 @@
+[gd_scene load_steps=20 format=3 uid="uid://cq3i5u5evd2dx"]
+
+[ext_resource type="Script" path="res://SidePanelManager.gd" id="1_e0ty4"]
+[ext_resource type="Texture2D" uid="uid://bowthof1vclnl" path="res://UI/Side Menu/bagbutton.png" id="2_yr10e"]
+[ext_resource type="Texture2D" uid="uid://lsnwaj8o6qny" path="res://UI/Side Menu/combatbutton.png" id="3_rii2r"]
+[ext_resource type="Texture2D" uid="uid://dxq8vqo31ao43" path="res://UI/Side Menu/spellbookbutton.png" id="4_su2aj"]
+[ext_resource type="Texture2D" uid="uid://beanv5bynqun3" path="res://UI/Side Menu/equipmentbutton.png" id="5_0ufq0"]
+[ext_resource type="Texture2D" uid="uid://e6p2j50nooux" path="res://UI/Side Menu/Prayerbutton.png" id="6_tk4m8"]
+[ext_resource type="Texture2D" uid="uid://51w4g17k6a2j" path="res://UI/Side Menu/SkillsButton.png" id="7_x6yry"]
+[ext_resource type="Texture2D" uid="uid://hcruwgyjt22k" path="res://UI/Side Menu/questsbutton.png" id="8_givfb"]
+[ext_resource type="Texture2D" uid="uid://cmcu31oerw7id" path="res://UI/Side Menu/emotesbutton.png" id="9_s54dx"]
+[ext_resource type="Texture2D" uid="uid://b83qgtb35jeol" path="res://UI/Side Menu/groupsbutton.png" id="10_mrk2w"]
+[ext_resource type="Texture2D" uid="uid://s6frwxpkiilm" path="res://UI/Side Menu/musicbutton.png" id="11_peaw5"]
+[ext_resource type="Texture2D" uid="uid://cmjspc38xm4gi" path="res://UI/Side Menu/accsettingsbutton.png" id="12_47csv"]
+[ext_resource type="Texture2D" uid="uid://412buqegd5jr" path="res://UI/Side Menu/friendsbutton.png" id="13_rbqpp"]
+[ext_resource type="Texture2D" uid="uid://cax8bmu7cxq5s" path="res://UI/Side Menu/settingsbutton.png" id="14_jpeos"]
+[ext_resource type="Texture2D" uid="uid://wq8uhhdxfw7h" path="res://UI/Side Menu/quitbutton.png" id="15_f4k5j"]
+[ext_resource type="Texture2D" uid="uid://c6qe6u4rv17g6" path="res://UI/Side Menu/Equipmentpane1.png" id="16_kh68t"]
+[ext_resource type="Texture2D" uid="uid://d03mmflkn37ph" path="res://UI/Side Menu/PaneMenu.png" id="16_r555f"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tpt0i"]
+texture = ExtResource("16_r555f")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7a0ip"]
+texture = ExtResource("16_kh68t")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e0ty4")
+
+[node name="InventoryButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -116.0
+offset_top = -63.0
+offset_right = -54.0
+offset_bottom = -1.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_type_variation = &"FlatButton"
+icon = ExtResource("2_yr10e")
+
+[node name="CombatButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1090.0
+offset_top = 261.0
+offset_right = 1152.0
+offset_bottom = 323.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("3_rii2r")
+
+[node name="SpellbookButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1036.0
+offset_top = 315.0
+offset_right = 1098.0
+offset_bottom = 377.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("4_su2aj")
+
+[node name="EquipmentButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1090.0
+offset_top = 315.0
+offset_right = 1152.0
+offset_bottom = 377.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("5_0ufq0")
+
+[node name="PrayerButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1036.0
+offset_top = 369.0
+offset_right = 1098.0
+offset_bottom = 431.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("6_tk4m8")
+
+[node name="SkillsButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1090.0
+offset_top = 369.0
+offset_right = 1152.0
+offset_bottom = 432.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("7_x6yry")
+
+[node name="QuestsButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1036.0
+offset_top = 423.0
+offset_right = 1098.0
+offset_bottom = 486.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("8_givfb")
+
+[node name="EmotesButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1090.0
+offset_top = 423.0
+offset_right = 1152.0
+offset_bottom = 486.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("9_s54dx")
+
+[node name="GroupsButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1036.0
+offset_top = 477.0
+offset_right = 1098.0
+offset_bottom = 540.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("10_mrk2w")
+
+[node name="MusicButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1090.0
+offset_top = 477.0
+offset_right = 1152.0
+offset_bottom = 540.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("11_peaw5")
+
+[node name="AccsettingsButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1036.0
+offset_top = 531.0
+offset_right = 1098.0
+offset_bottom = 594.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("12_47csv")
+
+[node name="FriendsButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1090.0
+offset_top = 531.0
+offset_right = 1152.0
+offset_bottom = 594.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("13_rbqpp")
+
+[node name="SettingsButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1036.0
+offset_top = 585.0
+offset_right = 1098.0
+offset_bottom = 648.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("14_jpeos")
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1090.0
+offset_top = 585.0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("15_f4k5j")
+
+[node name="InventoryPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 726.0
+offset_top = 265.0
+offset_right = 1040.0
+offset_bottom = 643.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_tpt0i")
+
+[node name="EquipmentPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 726.0
+offset_top = 265.0
+offset_right = 1040.0
+offset_bottom = 643.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_7a0ip")

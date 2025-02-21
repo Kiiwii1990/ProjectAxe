@@ -1,0 +1,53 @@
+[gd_scene load_steps=10 format=3 uid="uid://d55w2ys2jfav"]
+
+[ext_resource type="Script" path="res://terrain.gd" id="1_lmn8h"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1yrfq"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_es1lu"]
+sky_material = SubResource("ProceduralSkyMaterial_1yrfq")
+
+[sub_resource type="Environment" id="Environment_b7swq"]
+background_mode = 2
+sky = SubResource("Sky_es1lu")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i3hsq"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dgxnr"]
+material = SubResource("StandardMaterial3D_i3hsq")
+
+[sub_resource type="MeshTexture" id="MeshTexture_q8ed6"]
+mesh = SubResource("PlaneMesh_dgxnr")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_px65c"]
+albedo_color = Color(0.184314, 1, 1, 1)
+albedo_texture = SubResource("MeshTexture_q8ed6")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_c8hk7"]
+material = SubResource("StandardMaterial3D_px65c")
+size = Vector2(100, 100)
+subdivide_width = 100
+subdivide_depth = 100
+
+[node name="TerrainRoot" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_b7swq")
+
+[node name="terrain2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.999934, 0.011484, 0, -0.011484, 0.999934, -0.00872231, -0.0093025, 0.00290298)
+mesh = SubResource("PlaneMesh_c8hk7")
+script = ExtResource("1_lmn8h")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 60, 0)
+light_energy = 2.0
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.932324, 0.230508, -0.278636, 0, 0.770513, 0.637424, 0.361625, 0.594286, -0.718368, 2, 5, 0)
+current = true
+fov = 102.581
