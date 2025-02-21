@@ -1,10 +1,10 @@
+
 [gd_scene load_steps=5 format=3 uid="uid://c6tyggpqh4l73"]
 
 [ext_resource type="PackedScene" uid="uid://dx0uranidjelv" path="res://Models/GM island.glb" id="1_04mbj"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_kbncl"]
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_5lf1y"]
+[sub_resource type="BoxMesh" id="BoxMesh_kbncl"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_f7h02"]
 
@@ -18,10 +18,7 @@ mesh = SubResource("BoxMesh_kbncl")
 format = 2
 
 [node name="Camera3D" type="Camera3D" parent="."]
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.89255, 0, 0)
-mesh = SubResource("PlaneMesh_5lf1y")
+transform = Transform3D(1, 0, 0, 0, 0.973487, 0.228742, 0, -0.228742, 0.973487, -9.7119, 2.52535, 7.45073)
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
 mesh = SubResource("PrismMesh_f7h02")

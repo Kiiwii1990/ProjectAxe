@@ -1,0 +1,80 @@
+[gd_scene load_steps=11 format=3 uid="uid://b13ic4tckyfyw"]
+
+[ext_resource type="PackedScene" uid="uid://b03pf0kdttby4" path="res://player.tscn" id="1_ooq5o"]
+[ext_resource type="Script" path="res://cameracontroller.gd" id="2_xl03y"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_52a36"]
+vertices = PackedVector3Array(-4.31053, 0.151114, -3.95154, -4.31053, 0.151114, 4.04846, 4.18947, 0.151114, 4.04846, 4.18947, 0.151114, -3.95154)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+cell_height = 0.1
+
+[sub_resource type="BoxMesh" id="BoxMesh_qqrli"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g6856"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1qdxt"]
+
+[sub_resource type="Sky" id="Sky_vmagm"]
+sky_material = SubResource("ProceduralSkyMaterial_1qdxt")
+
+[sub_resource type="Environment" id="Environment_4y07d"]
+background_mode = 2
+sky = SubResource("Sky_vmagm")
+ambient_light_source = 3
+ambient_light_color = Color(0.847474, 0.847474, 0.847474, 1)
+reflected_light_source = 2
+
+[sub_resource type="BoxMesh" id="BoxMesh_7roxg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g36vv"]
+
+[node name="MovementTesting" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.999701, -0.0194028, 0.014913, -0.0174333, -0.136988, 0.990419, -0.017174, -0.990383, -0.137286, 0, 3.02368, 0)
+light_color = Color(1, 0.717647, 0.643137, 1)
+shadow_enabled = true
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+transform = Transform3D(8.29506, 0, 0, 0, 2.16523, 0, 0, 0, 6.20193, 0, 0, 0)
+navigation_mesh = SubResource("NavigationMesh_52a36")
+navigation_layers = 3
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(9.62106, 0, 0, 0, 0.0977725, 0, 0, 0, 8.90308, 0, 0, 0)
+mesh = SubResource("BoxMesh_qqrli")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/MeshInstance3D/StaticBody3D"]
+transform = Transform3D(1.00121, 0, 0, 0, 1.00121, 0, 0, 0, 1.00121, 0, 0, 0)
+shape = SubResource("BoxShape3D_g6856")
+
+[node name="Player" parent="." instance=ExtResource("1_ooq5o")]
+transform = Transform3D(1, 0, 0, 0, 0.752734, 0, 0, 0, 0.792462, 0, 0.798873, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_4y07d")
+
+[node name="Cameracontroller" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.748343, 0.663313, 0, -0.663313, 0.748343, 0, 12, 17.481)
+script = ExtResource("2_xl03y")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="Cameracontroller"]
+collision_mask = 2
+spring_length = 5.0
+
+[node name="Camera3D" type="Camera3D" parent="Cameracontroller/SpringArm3D" groups=["Camera"]]
+transform = Transform3D(1, 0, 0, 0, 1, 2.98023e-08, 0, -2.98023e-08, 1, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(23.419, 0, 0, 0, 5.27259, 0, 0, 0, 1, 0, 2.71349, -7.15537)
+layers = 2
+mesh = SubResource("BoxMesh_7roxg")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("BoxShape3D_g36vv")
