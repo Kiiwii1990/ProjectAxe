@@ -1,4 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6tyggpqh4l73"]
+
+[gd_scene load_steps=5 format=3 uid="uid://c6tyggpqh4l73"]
+
+[ext_resource type="PackedScene" uid="uid://dx0uranidjelv" path="res://Models/GM island.glb" id="1_04mbj"]
+
 
 [sub_resource type="BoxMesh" id="BoxMesh_kbncl"]
 
@@ -18,3 +22,6 @@ transform = Transform3D(1, 0, 0, 0, 0.973487, 0.228742, 0, -0.228742, 0.973487, 
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
 mesh = SubResource("PrismMesh_f7h02")
+
+[node name="GM island" parent="." instance=ExtResource("1_04mbj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
