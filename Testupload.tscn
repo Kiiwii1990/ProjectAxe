@@ -1,4 +1,10 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://c6tyggpqh4l73"]
+=======
+[gd_scene load_steps=4 format=3 uid="uid://c6tyggpqh4l73"]
+
+[ext_resource type="PackedScene" uid="uid://dx0uranidjelv" path="res://Models/GM island.glb" id="1_04mbj"]
+>>>>>>> Stashed changes
 
 [sub_resource type="BoxMesh" id="BoxMesh_kbncl"]
 
