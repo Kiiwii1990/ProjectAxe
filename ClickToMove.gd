@@ -2,6 +2,7 @@ extends CharacterBody3D
 
 @onready var navigationAgent := $NavigationAgent3D
 @onready var gravity = 9.8
+
 var Speed = 2
 var lastLookDirection : Vector3
 var turn_speed = 5
@@ -53,6 +54,8 @@ func _input(event: InputEvent) -> void:
 			return
 		navigationAgent.target_position = result.position
 		
+
+
 #func _physics_process(delta):
 	#rotation.x = 0
 	#rotation.z = 0
