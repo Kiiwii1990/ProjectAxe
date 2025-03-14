@@ -1,8 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://b13ic4tckyfyw"]
+
+[gd_scene load_steps=11 format=3 uid="uid://b13ic4tckyfyw"]
 
 [ext_resource type="PackedScene" uid="uid://b03pf0kdttby4" path="res://player.tscn" id="1_ooq5o"]
 [ext_resource type="Script" path="res://cameracontroller.gd" id="2_xl03y"]
-[ext_resource type="PackedScene" uid="uid://chh34n4u8f8be" path="res://gm_island.tscn" id="3_nuhr0"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_52a36"]
 vertices = PackedVector3Array(-4.31053, 0.151114, -3.95154, -4.31053, 0.151114, 4.04846, 4.18947, 0.151114, 4.04846, 4.18947, 0.151114, -3.95154)
@@ -30,9 +30,6 @@ reflected_light_source = 2
 [sub_resource type="BoxShape3D" id="BoxShape3D_g36vv"]
 
 [node name="MovementTesting" type="Node3D"]
-
-[node name="GM island" parent="." instance=ExtResource("3_nuhr0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.9256, 0.0579559, 40.7125)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.999701, -0.0194028, 0.014913, -0.0174333, -0.136988, 0.990419, -0.017174, -0.990383, -0.137286, 0, 3.02368, 0)
@@ -65,7 +62,7 @@ transform = Transform3D(1, 0, 0, 0, 0.748343, 0.663313, 0, -0.663313, 0.748343, 
 script = ExtResource("2_xl03y")
 
 [node name="SpringArm3D" type="SpringArm3D" parent="Cameracontroller"]
-collision_mask = 3
+collision_mask = 2
 spring_length = 5.0
 
 [node name="Camera3D" type="Camera3D" parent="Cameracontroller/SpringArm3D" groups=["Camera"]]

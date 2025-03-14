@@ -1,0 +1,835 @@
+[gd_resource type="MeshLibrary" load_steps=179 format=3 uid="uid://nlq153jowu0i"]
+
+[ext_resource type="Texture2D" uid="uid://j7t26klqmub8" path="res://TileTextures/cobble1.png" id="2_e08tv"]
+[ext_resource type="Shader" path="res://TileTextures/texturetest.gdshader" id="2_txc8r"]
+[ext_resource type="Texture2D" uid="uid://b3kd6134t45e1" path="res://TileTextures/dirt2.png" id="3_eam7l"]
+[ext_resource type="Texture2D" uid="uid://c325v8280lovf" path="res://TileTextures/dirt3.png" id="4_p3gkl"]
+[ext_resource type="Texture2D" uid="uid://den3fa34cdxvq" path="res://TileTextures/dirt4.png" id="5_d5wd0"]
+[ext_resource type="Texture2D" uid="uid://b36icud0liro1" path="res://TileTextures/dirt5.png" id="6_ubaxg"]
+[ext_resource type="Texture2D" uid="uid://bcnyse3w18huw" path="res://TileTextures/dirt_puddle1.png" id="7_hk8ct"]
+[ext_resource type="Texture2D" uid="uid://csdhojmgg2v4o" path="res://TileTextures/gem1.png" id="8_eyqt0"]
+[ext_resource type="Texture2D" uid="uid://btw627fdgd7ci" path="res://TileTextures/gem2.png" id="9_wys57"]
+[ext_resource type="Texture2D" uid="uid://gxiyvjjg4e6n" path="res://TileTextures/gem3.png" id="10_kxfea"]
+[ext_resource type="Texture2D" uid="uid://b7o144lao51yr" path="res://TileTextures/grass1.png" id="11_mx54n"]
+[ext_resource type="Texture2D" uid="uid://dfbkqvm3jvam" path="res://TileTextures/grass2.png" id="12_8erqr"]
+[ext_resource type="Texture2D" uid="uid://cvoojidupj6ob" path="res://TileTextures/cobble2.png" id="13_jrj3t"]
+[ext_resource type="Texture2D" uid="uid://dkqhs6unxfsln" path="res://TileTextures/grass3.png" id="14_68rff"]
+[ext_resource type="Texture2D" uid="uid://c1a36wwg85w0s" path="res://TileTextures/grass4.png" id="15_hw8tf"]
+[ext_resource type="Texture2D" uid="uid://b1lpcoppqrfd" path="res://TileTextures/grass5.png" id="16_nnuoj"]
+[ext_resource type="Texture2D" uid="uid://b7whh3ymm7fps" path="res://TileTextures/grass6.png" id="17_8oeg5"]
+[ext_resource type="Texture2D" uid="uid://dhw70mikulw23" path="res://TileTextures/grass7.png" id="18_oroc2"]
+[ext_resource type="Texture2D" uid="uid://bftxlkuvftksv" path="res://TileTextures/grass8.png" id="19_74p10"]
+[ext_resource type="Texture2D" uid="uid://kut7huwm06a3" path="res://TileTextures/grass_sand1.png" id="20_fk284"]
+[ext_resource type="Texture2D" uid="uid://c1tsvddk0vyg0" path="res://TileTextures/ice_puddle1.png" id="21_6jcpk"]
+[ext_resource type="Texture2D" uid="uid://b6gegfe7rniyb" path="res://TileTextures/pebble1.png" id="22_tgep2"]
+[ext_resource type="Texture2D" uid="uid://boalnvtpryapp" path="res://TileTextures/pebble2.png" id="23_okv74"]
+[ext_resource type="Texture2D" uid="uid://34qv6khf5ewj" path="res://TileTextures/cobble3.png" id="24_i4wle"]
+[ext_resource type="Texture2D" uid="uid://bugie7ddmjbjg" path="res://TileTextures/plank1.png" id="25_7x2je"]
+[ext_resource type="Texture2D" uid="uid://bto57avyg7j4f" path="res://TileTextures/plank2.png" id="26_c1kns"]
+[ext_resource type="Texture2D" uid="uid://cqcd525183h4d" path="res://TileTextures/plank3.png" id="27_se613"]
+[ext_resource type="Texture2D" uid="uid://b3vcadikjwdc3" path="res://TileTextures/plank4.png" id="28_k8rk1"]
+[ext_resource type="Texture2D" uid="uid://d4dmyv1otsib2" path="res://TileTextures/plank5.png" id="29_w6v6d"]
+[ext_resource type="Texture2D" uid="uid://cl460hyn3m0j4" path="res://TileTextures/plank6.png" id="30_6h8hj"]
+[ext_resource type="Texture2D" uid="uid://3jwu3crgfmay" path="res://TileTextures/rock_lava1.png" id="31_8y2i0"]
+[ext_resource type="Texture2D" uid="uid://vxlsnxtkfbo3" path="res://TileTextures/rock_lava10.png" id="32_tuoj5"]
+[ext_resource type="Texture2D" uid="uid://ccbvjqtmeig3a" path="res://TileTextures/rock_lava2.png" id="33_vdl3i"]
+[ext_resource type="Texture2D" uid="uid://y6a3icavhn61" path="res://TileTextures/rock_lava3.png" id="34_ohime"]
+[ext_resource type="Texture2D" uid="uid://b5jwivh3br00c" path="res://TileTextures/cobble4.png" id="35_hrt3p"]
+[ext_resource type="Texture2D" uid="uid://dgw4tsgn5lsfx" path="res://TileTextures/rock_lava4.png" id="36_wy87y"]
+[ext_resource type="Texture2D" uid="uid://cwepo0h8ls8a0" path="res://TileTextures/rock_lava5.png" id="37_huu0n"]
+[ext_resource type="Texture2D" uid="uid://bsoir4wbp7r0t" path="res://TileTextures/rock_lava6.png" id="38_h4eer"]
+[ext_resource type="Texture2D" uid="uid://bh1buldckpcv8" path="res://TileTextures/rock_lava7.png" id="39_8nrfo"]
+[ext_resource type="Texture2D" uid="uid://c4va3tpow6jqt" path="res://TileTextures/rock_lava8.png" id="40_42750"]
+[ext_resource type="Texture2D" uid="uid://dkb5cgkux8xkn" path="res://TileTextures/rock_lava9.png" id="41_hj2cu"]
+[ext_resource type="Texture2D" uid="uid://cr3cw27mmgca1" path="res://TileTextures/sand2.png" id="42_345oe"]
+[ext_resource type="Texture2D" uid="uid://l1m846scv66l" path="res://TileTextures/sand_1.png" id="43_h3qoq"]
+[ext_resource type="Texture2D" uid="uid://c7vpgje45noy1" path="res://TileTextures/sand_pebble1.png" id="44_53klg"]
+[ext_resource type="Texture2D" uid="uid://ctqilp4afga35" path="res://TileTextures/sand_pebble2.png" id="45_2b5h0"]
+[ext_resource type="Texture2D" uid="uid://2lbqp0xljs4a" path="res://TileTextures/cobble5.png" id="46_bt7e1"]
+[ext_resource type="Texture2D" uid="uid://c4uqors6km7c5" path="res://TileTextures/snow1.png" id="47_n2ign"]
+[ext_resource type="Texture2D" uid="uid://d0l08sii5f6k1" path="res://TileTextures/snow_dirt_grass1.png" id="48_5kgcv"]
+[ext_resource type="Texture2D" uid="uid://cibhw45jum1sb" path="res://TileTextures/snow_rock1.png" id="49_a57ki"]
+[ext_resource type="Texture2D" uid="uid://cr2f73hyl7hr" path="res://TileTextures/snow_rock2.png" id="50_6etxw"]
+[ext_resource type="Texture2D" uid="uid://bfggq5pehyw4q" path="res://TileTextures/stone1.png" id="51_umt0p"]
+[ext_resource type="Texture2D" uid="uid://drqokw50cirug" path="res://TileTextures/stone2.png" id="52_eobeg"]
+[ext_resource type="Texture2D" uid="uid://chtcaqwsrek5f" path="res://TileTextures/stone3.png" id="53_clrug"]
+[ext_resource type="Texture2D" uid="uid://4id8wcqgk3kr" path="res://TileTextures/stone4.png" id="54_55a3a"]
+[ext_resource type="Texture2D" uid="uid://dps5lgrgomebh" path="res://TileTextures/stone5.png" id="55_8r2pu"]
+[ext_resource type="Texture2D" uid="uid://b62xyh3s57gd6" path="res://TileTextures/cobble6.png" id="56_f5xmi"]
+[ext_resource type="Texture2D" uid="uid://dnxg4iu0qkcex" path="res://TileTextures/cobble7.png" id="57_a51ba"]
+[ext_resource type="Texture2D" uid="uid://vrdjrfkce6rs" path="res://TileTextures/cobble8.png" id="58_4trx2"]
+[ext_resource type="Texture2D" uid="uid://dlajgcm4vr1eg" path="res://TileTextures/dirt1.png" id="59_j5s1t"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_70832"]
+render_priority = 0
+shader = ExtResource("2_txc8r")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ktjsc"]
+next_pass = SubResource("ShaderMaterial_70832")
+albedo_texture = ExtResource("27_se613")
+
+[sub_resource type="QuadMesh" id="QuadMesh_vygq8"]
+material = SubResource("StandardMaterial3D_ktjsc")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_36tfl"]
+albedo_texture = ExtResource("2_e08tv")
+
+[sub_resource type="QuadMesh" id="QuadMesh_n7dnq"]
+material = SubResource("StandardMaterial3D_36tfl")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pdipj"]
+albedo_texture = ExtResource("3_eam7l")
+
+[sub_resource type="QuadMesh" id="QuadMesh_prcyx"]
+material = SubResource("StandardMaterial3D_pdipj")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l7tf8"]
+albedo_texture = ExtResource("4_p3gkl")
+
+[sub_resource type="QuadMesh" id="QuadMesh_3r70h"]
+material = SubResource("StandardMaterial3D_l7tf8")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7cwp0"]
+albedo_texture = ExtResource("5_d5wd0")
+
+[sub_resource type="QuadMesh" id="QuadMesh_ock26"]
+material = SubResource("StandardMaterial3D_7cwp0")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jfws4"]
+albedo_texture = ExtResource("6_ubaxg")
+
+[sub_resource type="QuadMesh" id="QuadMesh_c668h"]
+material = SubResource("StandardMaterial3D_jfws4")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q607f"]
+albedo_texture = ExtResource("7_hk8ct")
+
+[sub_resource type="QuadMesh" id="QuadMesh_h8wjl"]
+material = SubResource("StandardMaterial3D_q607f")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qyhls"]
+albedo_texture = ExtResource("8_eyqt0")
+
+[sub_resource type="QuadMesh" id="QuadMesh_80non"]
+material = SubResource("StandardMaterial3D_qyhls")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_73cs7"]
+albedo_texture = ExtResource("9_wys57")
+
+[sub_resource type="QuadMesh" id="QuadMesh_arx1y"]
+material = SubResource("StandardMaterial3D_73cs7")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4h5ie"]
+albedo_texture = ExtResource("10_kxfea")
+
+[sub_resource type="QuadMesh" id="QuadMesh_0qb38"]
+material = SubResource("StandardMaterial3D_4h5ie")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qimkh"]
+albedo_texture = ExtResource("11_mx54n")
+
+[sub_resource type="QuadMesh" id="QuadMesh_cdgko"]
+material = SubResource("StandardMaterial3D_qimkh")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mt2ce"]
+albedo_texture = ExtResource("12_8erqr")
+
+[sub_resource type="QuadMesh" id="QuadMesh_dek3a"]
+material = SubResource("StandardMaterial3D_mt2ce")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e4k7a"]
+albedo_texture = ExtResource("13_jrj3t")
+
+[sub_resource type="QuadMesh" id="QuadMesh_a8c63"]
+material = SubResource("StandardMaterial3D_e4k7a")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5scms"]
+albedo_texture = ExtResource("14_68rff")
+
+[sub_resource type="QuadMesh" id="QuadMesh_xw2iv"]
+material = SubResource("StandardMaterial3D_5scms")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ieb1"]
+albedo_texture = ExtResource("15_hw8tf")
+
+[sub_resource type="QuadMesh" id="QuadMesh_qcvta"]
+material = SubResource("StandardMaterial3D_6ieb1")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rkowo"]
+albedo_texture = ExtResource("16_nnuoj")
+
+[sub_resource type="QuadMesh" id="QuadMesh_jjv0s"]
+material = SubResource("StandardMaterial3D_rkowo")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l3p8w"]
+albedo_texture = ExtResource("17_8oeg5")
+
+[sub_resource type="QuadMesh" id="QuadMesh_v34pi"]
+material = SubResource("StandardMaterial3D_l3p8w")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kop0c"]
+albedo_texture = ExtResource("18_oroc2")
+
+[sub_resource type="QuadMesh" id="QuadMesh_fi3eo"]
+material = SubResource("StandardMaterial3D_kop0c")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pnipm"]
+albedo_texture = ExtResource("19_74p10")
+
+[sub_resource type="QuadMesh" id="QuadMesh_qdasy"]
+material = SubResource("StandardMaterial3D_pnipm")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8sdlv"]
+albedo_texture = ExtResource("20_fk284")
+
+[sub_resource type="QuadMesh" id="QuadMesh_038u5"]
+material = SubResource("StandardMaterial3D_8sdlv")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yyhxh"]
+albedo_texture = ExtResource("21_6jcpk")
+
+[sub_resource type="QuadMesh" id="QuadMesh_rq5bg"]
+material = SubResource("StandardMaterial3D_yyhxh")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s22wd"]
+albedo_texture = ExtResource("22_tgep2")
+
+[sub_resource type="QuadMesh" id="QuadMesh_2uugh"]
+material = SubResource("StandardMaterial3D_s22wd")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x5bcj"]
+albedo_texture = ExtResource("23_okv74")
+
+[sub_resource type="QuadMesh" id="QuadMesh_ldxqq"]
+material = SubResource("StandardMaterial3D_x5bcj")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cbpoa"]
+albedo_texture = ExtResource("24_i4wle")
+
+[sub_resource type="QuadMesh" id="QuadMesh_8wn6j"]
+material = SubResource("StandardMaterial3D_cbpoa")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2cu5y"]
+albedo_texture = ExtResource("25_7x2je")
+
+[sub_resource type="QuadMesh" id="QuadMesh_xtug4"]
+material = SubResource("StandardMaterial3D_2cu5y")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0xy8t"]
+albedo_texture = ExtResource("26_c1kns")
+
+[sub_resource type="QuadMesh" id="QuadMesh_5lci7"]
+material = SubResource("StandardMaterial3D_0xy8t")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gs56m"]
+albedo_texture = ExtResource("27_se613")
+
+[sub_resource type="QuadMesh" id="QuadMesh_bu3yh"]
+material = SubResource("StandardMaterial3D_gs56m")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lleac"]
+albedo_texture = ExtResource("28_k8rk1")
+
+[sub_resource type="QuadMesh" id="QuadMesh_c0pt8"]
+material = SubResource("StandardMaterial3D_lleac")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cn1sl"]
+albedo_texture = ExtResource("29_w6v6d")
+
+[sub_resource type="QuadMesh" id="QuadMesh_fk21e"]
+material = SubResource("StandardMaterial3D_cn1sl")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wm5qx"]
+albedo_texture = ExtResource("30_6h8hj")
+
+[sub_resource type="QuadMesh" id="QuadMesh_siy60"]
+material = SubResource("StandardMaterial3D_wm5qx")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6s16a"]
+albedo_texture = ExtResource("31_8y2i0")
+
+[sub_resource type="QuadMesh" id="QuadMesh_8bm30"]
+material = SubResource("StandardMaterial3D_6s16a")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wkc11"]
+albedo_texture = ExtResource("32_tuoj5")
+
+[sub_resource type="QuadMesh" id="QuadMesh_o627e"]
+material = SubResource("StandardMaterial3D_wkc11")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m3vnw"]
+albedo_texture = ExtResource("33_vdl3i")
+
+[sub_resource type="QuadMesh" id="QuadMesh_de5hb"]
+material = SubResource("StandardMaterial3D_m3vnw")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8l2dp"]
+albedo_texture = ExtResource("34_ohime")
+
+[sub_resource type="QuadMesh" id="QuadMesh_tyy7a"]
+material = SubResource("StandardMaterial3D_8l2dp")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7gsua"]
+albedo_texture = ExtResource("35_hrt3p")
+
+[sub_resource type="QuadMesh" id="QuadMesh_2w41o"]
+material = SubResource("StandardMaterial3D_7gsua")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7rp8q"]
+albedo_texture = ExtResource("36_wy87y")
+
+[sub_resource type="QuadMesh" id="QuadMesh_d67i1"]
+material = SubResource("StandardMaterial3D_7rp8q")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k80na"]
+albedo_texture = ExtResource("37_huu0n")
+
+[sub_resource type="QuadMesh" id="QuadMesh_51rc8"]
+material = SubResource("StandardMaterial3D_k80na")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tca4r"]
+albedo_texture = ExtResource("38_h4eer")
+
+[sub_resource type="QuadMesh" id="QuadMesh_tgbyi"]
+material = SubResource("StandardMaterial3D_tca4r")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ukyty"]
+albedo_texture = ExtResource("39_8nrfo")
+
+[sub_resource type="QuadMesh" id="QuadMesh_6yhqq"]
+material = SubResource("StandardMaterial3D_ukyty")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bcj03"]
+albedo_texture = ExtResource("40_42750")
+
+[sub_resource type="QuadMesh" id="QuadMesh_y4j32"]
+material = SubResource("StandardMaterial3D_bcj03")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rspek"]
+albedo_texture = ExtResource("41_hj2cu")
+
+[sub_resource type="QuadMesh" id="QuadMesh_cdec3"]
+material = SubResource("StandardMaterial3D_rspek")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ge31p"]
+albedo_texture = ExtResource("42_345oe")
+
+[sub_resource type="QuadMesh" id="QuadMesh_doypi"]
+material = SubResource("StandardMaterial3D_ge31p")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qoafg"]
+albedo_texture = ExtResource("43_h3qoq")
+
+[sub_resource type="QuadMesh" id="QuadMesh_35ebn"]
+material = SubResource("StandardMaterial3D_qoafg")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mclos"]
+albedo_texture = ExtResource("44_53klg")
+
+[sub_resource type="QuadMesh" id="QuadMesh_5l1l8"]
+material = SubResource("StandardMaterial3D_mclos")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5yi2h"]
+albedo_texture = ExtResource("45_2b5h0")
+
+[sub_resource type="QuadMesh" id="QuadMesh_kxdpo"]
+material = SubResource("StandardMaterial3D_5yi2h")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lvckr"]
+albedo_texture = ExtResource("46_bt7e1")
+
+[sub_resource type="QuadMesh" id="QuadMesh_hwgxi"]
+material = SubResource("StandardMaterial3D_lvckr")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bc133"]
+albedo_texture = ExtResource("47_n2ign")
+
+[sub_resource type="QuadMesh" id="QuadMesh_mu257"]
+material = SubResource("StandardMaterial3D_bc133")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7tlpe"]
+albedo_texture = ExtResource("48_5kgcv")
+
+[sub_resource type="QuadMesh" id="QuadMesh_653ks"]
+material = SubResource("StandardMaterial3D_7tlpe")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3kscw"]
+albedo_texture = ExtResource("49_a57ki")
+
+[sub_resource type="QuadMesh" id="QuadMesh_n22mq"]
+material = SubResource("StandardMaterial3D_3kscw")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4b1kk"]
+albedo_texture = ExtResource("50_6etxw")
+
+[sub_resource type="QuadMesh" id="QuadMesh_lhibp"]
+material = SubResource("StandardMaterial3D_4b1kk")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_efx6w"]
+albedo_texture = ExtResource("51_umt0p")
+
+[sub_resource type="QuadMesh" id="QuadMesh_eayk8"]
+material = SubResource("StandardMaterial3D_efx6w")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ahe6x"]
+albedo_texture = ExtResource("52_eobeg")
+
+[sub_resource type="QuadMesh" id="QuadMesh_dsi2y"]
+material = SubResource("StandardMaterial3D_ahe6x")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ydftt"]
+albedo_texture = ExtResource("53_clrug")
+
+[sub_resource type="QuadMesh" id="QuadMesh_8hx7f"]
+material = SubResource("StandardMaterial3D_ydftt")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ii65q"]
+albedo_texture = ExtResource("54_55a3a")
+
+[sub_resource type="QuadMesh" id="QuadMesh_anpd5"]
+material = SubResource("StandardMaterial3D_ii65q")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n7svn"]
+albedo_texture = ExtResource("55_8r2pu")
+
+[sub_resource type="QuadMesh" id="QuadMesh_1qrwx"]
+material = SubResource("StandardMaterial3D_n7svn")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ei8t"]
+albedo_texture = ExtResource("56_f5xmi")
+
+[sub_resource type="QuadMesh" id="QuadMesh_rm1gf"]
+material = SubResource("StandardMaterial3D_0ei8t")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ncfi1"]
+albedo_texture = ExtResource("57_a51ba")
+
+[sub_resource type="QuadMesh" id="QuadMesh_hbwra"]
+material = SubResource("StandardMaterial3D_ncfi1")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vc4gt"]
+albedo_texture = ExtResource("58_4trx2")
+
+[sub_resource type="QuadMesh" id="QuadMesh_y753n"]
+material = SubResource("StandardMaterial3D_vc4gt")
+size = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5tkkd"]
+albedo_texture = ExtResource("59_j5s1t")
+
+[sub_resource type="QuadMesh" id="QuadMesh_0f1ij"]
+material = SubResource("StandardMaterial3D_5tkkd")
+size = Vector2(2, 2)
+
+[resource]
+item/0/name = ""
+item/0/mesh = SubResource("QuadMesh_vygq8")
+item/0/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/0/shapes = []
+item/0/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/0/navigation_layers = 1
+item/1/name = ""
+item/1/mesh = SubResource("QuadMesh_n7dnq")
+item/1/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/1/shapes = []
+item/1/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/1/navigation_layers = 1
+item/2/name = ""
+item/2/mesh = SubResource("QuadMesh_a8c63")
+item/2/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/2/shapes = []
+item/2/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/2/navigation_layers = 1
+item/3/name = ""
+item/3/mesh = SubResource("QuadMesh_8wn6j")
+item/3/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/3/shapes = []
+item/3/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/3/navigation_layers = 1
+item/4/name = ""
+item/4/mesh = SubResource("QuadMesh_2w41o")
+item/4/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/4/shapes = []
+item/4/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/4/navigation_layers = 1
+item/5/name = ""
+item/5/mesh = SubResource("QuadMesh_hwgxi")
+item/5/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/5/shapes = []
+item/5/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/5/navigation_layers = 1
+item/6/name = ""
+item/6/mesh = SubResource("QuadMesh_rm1gf")
+item/6/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/6/shapes = []
+item/6/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/6/navigation_layers = 1
+item/7/name = ""
+item/7/mesh = SubResource("QuadMesh_hbwra")
+item/7/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/7/shapes = []
+item/7/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/7/navigation_layers = 1
+item/8/name = ""
+item/8/mesh = SubResource("QuadMesh_y753n")
+item/8/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/8/shapes = []
+item/8/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/8/navigation_layers = 1
+item/9/name = ""
+item/9/mesh = SubResource("QuadMesh_0f1ij")
+item/9/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/9/shapes = []
+item/9/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/9/navigation_layers = 1
+item/10/name = ""
+item/10/mesh = SubResource("QuadMesh_prcyx")
+item/10/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/10/shapes = []
+item/10/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/10/navigation_layers = 1
+item/11/name = ""
+item/11/mesh = SubResource("QuadMesh_3r70h")
+item/11/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/11/shapes = []
+item/11/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/11/navigation_layers = 1
+item/12/name = ""
+item/12/mesh = SubResource("QuadMesh_ock26")
+item/12/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/12/shapes = []
+item/12/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/12/navigation_layers = 1
+item/13/name = ""
+item/13/mesh = SubResource("QuadMesh_c668h")
+item/13/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/13/shapes = []
+item/13/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/13/navigation_layers = 1
+item/14/name = ""
+item/14/mesh = SubResource("QuadMesh_h8wjl")
+item/14/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/14/shapes = []
+item/14/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/14/navigation_layers = 1
+item/15/name = ""
+item/15/mesh = SubResource("QuadMesh_80non")
+item/15/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/15/shapes = []
+item/15/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/15/navigation_layers = 1
+item/16/name = ""
+item/16/mesh = SubResource("QuadMesh_arx1y")
+item/16/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/16/shapes = []
+item/16/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/16/navigation_layers = 1
+item/17/name = ""
+item/17/mesh = SubResource("QuadMesh_0qb38")
+item/17/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/17/shapes = []
+item/17/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/17/navigation_layers = 1
+item/18/name = ""
+item/18/mesh = SubResource("QuadMesh_cdgko")
+item/18/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/18/shapes = []
+item/18/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/18/navigation_layers = 1
+item/19/name = ""
+item/19/mesh = SubResource("QuadMesh_dek3a")
+item/19/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/19/shapes = []
+item/19/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/19/navigation_layers = 1
+item/20/name = ""
+item/20/mesh = SubResource("QuadMesh_xw2iv")
+item/20/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/20/shapes = []
+item/20/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/20/navigation_layers = 1
+item/21/name = ""
+item/21/mesh = SubResource("QuadMesh_qcvta")
+item/21/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/21/shapes = []
+item/21/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/21/navigation_layers = 1
+item/22/name = ""
+item/22/mesh = SubResource("QuadMesh_jjv0s")
+item/22/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/22/shapes = []
+item/22/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/22/navigation_layers = 1
+item/23/name = ""
+item/23/mesh = SubResource("QuadMesh_v34pi")
+item/23/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/23/shapes = []
+item/23/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/23/navigation_layers = 1
+item/24/name = ""
+item/24/mesh = SubResource("QuadMesh_fi3eo")
+item/24/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/24/shapes = []
+item/24/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/24/navigation_layers = 1
+item/25/name = ""
+item/25/mesh = SubResource("QuadMesh_qdasy")
+item/25/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/25/shapes = []
+item/25/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/25/navigation_layers = 1
+item/26/name = ""
+item/26/mesh = SubResource("QuadMesh_038u5")
+item/26/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/26/shapes = []
+item/26/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/26/navigation_layers = 1
+item/27/name = ""
+item/27/mesh = SubResource("QuadMesh_rq5bg")
+item/27/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/27/shapes = []
+item/27/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/27/navigation_layers = 1
+item/28/name = ""
+item/28/mesh = SubResource("QuadMesh_2uugh")
+item/28/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/28/shapes = []
+item/28/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/28/navigation_layers = 1
+item/29/name = ""
+item/29/mesh = SubResource("QuadMesh_ldxqq")
+item/29/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/29/shapes = []
+item/29/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/29/navigation_layers = 1
+item/30/name = ""
+item/30/mesh = SubResource("QuadMesh_xtug4")
+item/30/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/30/shapes = []
+item/30/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/30/navigation_layers = 1
+item/31/name = ""
+item/31/mesh = SubResource("QuadMesh_5lci7")
+item/31/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/31/shapes = []
+item/31/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/31/navigation_layers = 1
+item/32/name = ""
+item/32/mesh = SubResource("QuadMesh_bu3yh")
+item/32/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/32/shapes = []
+item/32/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/32/navigation_layers = 1
+item/33/name = ""
+item/33/mesh = SubResource("QuadMesh_c0pt8")
+item/33/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/33/shapes = []
+item/33/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/33/navigation_layers = 1
+item/34/name = ""
+item/34/mesh = SubResource("QuadMesh_fk21e")
+item/34/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/34/shapes = []
+item/34/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/34/navigation_layers = 1
+item/35/name = ""
+item/35/mesh = SubResource("QuadMesh_siy60")
+item/35/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/35/shapes = []
+item/35/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/35/navigation_layers = 1
+item/36/name = ""
+item/36/mesh = SubResource("QuadMesh_8bm30")
+item/36/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/36/shapes = []
+item/36/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/36/navigation_layers = 1
+item/37/name = ""
+item/37/mesh = SubResource("QuadMesh_o627e")
+item/37/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/37/shapes = []
+item/37/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/37/navigation_layers = 1
+item/38/name = ""
+item/38/mesh = SubResource("QuadMesh_de5hb")
+item/38/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/38/shapes = []
+item/38/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/38/navigation_layers = 1
+item/39/name = ""
+item/39/mesh = SubResource("QuadMesh_tyy7a")
+item/39/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/39/shapes = []
+item/39/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/39/navigation_layers = 1
+item/40/name = ""
+item/40/mesh = SubResource("QuadMesh_d67i1")
+item/40/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/40/shapes = []
+item/40/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/40/navigation_layers = 1
+item/41/name = ""
+item/41/mesh = SubResource("QuadMesh_51rc8")
+item/41/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/41/shapes = []
+item/41/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/41/navigation_layers = 1
+item/42/name = ""
+item/42/mesh = SubResource("QuadMesh_tgbyi")
+item/42/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/42/shapes = []
+item/42/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/42/navigation_layers = 1
+item/43/name = ""
+item/43/mesh = SubResource("QuadMesh_6yhqq")
+item/43/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/43/shapes = []
+item/43/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/43/navigation_layers = 1
+item/44/name = ""
+item/44/mesh = SubResource("QuadMesh_y4j32")
+item/44/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/44/shapes = []
+item/44/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/44/navigation_layers = 1
+item/45/name = ""
+item/45/mesh = SubResource("QuadMesh_cdec3")
+item/45/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/45/shapes = []
+item/45/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/45/navigation_layers = 1
+item/46/name = ""
+item/46/mesh = SubResource("QuadMesh_doypi")
+item/46/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/46/shapes = []
+item/46/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/46/navigation_layers = 1
+item/47/name = ""
+item/47/mesh = SubResource("QuadMesh_35ebn")
+item/47/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/47/shapes = []
+item/47/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/47/navigation_layers = 1
+item/48/name = ""
+item/48/mesh = SubResource("QuadMesh_5l1l8")
+item/48/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/48/shapes = []
+item/48/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/48/navigation_layers = 1
+item/49/name = ""
+item/49/mesh = SubResource("QuadMesh_kxdpo")
+item/49/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/49/shapes = []
+item/49/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/49/navigation_layers = 1
+item/50/name = ""
+item/50/mesh = SubResource("QuadMesh_mu257")
+item/50/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/50/shapes = []
+item/50/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/50/navigation_layers = 1
+item/51/name = ""
+item/51/mesh = SubResource("QuadMesh_653ks")
+item/51/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/51/shapes = []
+item/51/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/51/navigation_layers = 1
+item/52/name = ""
+item/52/mesh = SubResource("QuadMesh_n22mq")
+item/52/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/52/shapes = []
+item/52/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/52/navigation_layers = 1
+item/53/name = ""
+item/53/mesh = SubResource("QuadMesh_lhibp")
+item/53/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/53/shapes = []
+item/53/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/53/navigation_layers = 1
+item/54/name = ""
+item/54/mesh = SubResource("QuadMesh_eayk8")
+item/54/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/54/shapes = []
+item/54/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/54/navigation_layers = 1
+item/55/name = ""
+item/55/mesh = SubResource("QuadMesh_dsi2y")
+item/55/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/55/shapes = []
+item/55/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/55/navigation_layers = 1
+item/56/name = ""
+item/56/mesh = SubResource("QuadMesh_8hx7f")
+item/56/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/56/shapes = []
+item/56/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/56/navigation_layers = 1
+item/57/name = ""
+item/57/mesh = SubResource("QuadMesh_anpd5")
+item/57/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/57/shapes = []
+item/57/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/57/navigation_layers = 1
+item/58/name = ""
+item/58/mesh = SubResource("QuadMesh_1qrwx")
+item/58/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/58/shapes = []
+item/58/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/58/navigation_layers = 1
