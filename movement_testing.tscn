@@ -1,8 +1,8 @@
-
-[gd_scene load_steps=11 format=3 uid="uid://b13ic4tckyfyw"]
+[gd_scene load_steps=12 format=3 uid="uid://b13ic4tckyfyw"]
 
 [ext_resource type="PackedScene" uid="uid://b03pf0kdttby4" path="res://player.tscn" id="1_ooq5o"]
-[ext_resource type="Script" path="res://cameracontroller.gd" id="2_xl03y"]
+[ext_resource type="Script" uid="uid://cl7wh6856ul6a" path="res://cameracontroller.gd" id="2_xl03y"]
+[ext_resource type="PackedScene" uid="uid://chh34n4u8f8be" path="res://gm_island.tscn" id="3_1hi37"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_52a36"]
 vertices = PackedVector3Array(-4.31053, 0.151114, -3.95154, -4.31053, 0.151114, 4.04846, 4.18947, 0.151114, 4.04846, 4.18947, 0.151114, -3.95154)
@@ -69,13 +69,16 @@ spring_length = 5.0
 transform = Transform3D(1, 0, 0, 0, 1, 2.98023e-08, 0, -2.98023e-08, 1, 0, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(23.419, 0, 0, 0, 5.27259, 0, 0, 0, 1, 0, 2.71349, -7.15537)
+transform = Transform3D(23.419, 0, 0, 0, 5.27259, 0, 0, 0, 1, 0, 2.71349, -7.12357)
 layers = 2
 mesh = SubResource("BoxMesh_7roxg")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
-collision_layer = 3
-collision_mask = 3
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.179406)
 shape = SubResource("BoxShape3D_g36vv")
+
+[node name="GM island" parent="MeshInstance3D" instance=ExtResource("3_1hi37")]
+transform = Transform3D(0.0427004, 0, 0, 0, 0.18966, 0, 0, 0, 1, 0, -0.542018, 48.2951)
