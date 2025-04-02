@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://cq3i5u5evd2dx"]
 
-[ext_resource type="Script" path="res://SidePanelManager.gd" id="1_e0ty4"]
+[ext_resource type="Script" uid="uid://bkxxsu38wqupc" path="res://SidePanelManager.gd" id="1_e0ty4"]
 [ext_resource type="Texture2D" uid="uid://bowthof1vclnl" path="res://UI/Side Menu/bagbutton.png" id="2_yr10e"]
 [ext_resource type="Texture2D" uid="uid://lsnwaj8o6qny" path="res://UI/Side Menu/combatbutton.png" id="3_rii2r"]
 [ext_resource type="Texture2D" uid="uid://dxq8vqo31ao43" path="res://UI/Side Menu/spellbookbutton.png" id="4_su2aj"]
